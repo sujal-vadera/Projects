@@ -69,7 +69,7 @@ const SellVehicle = () => {
 
       {submitted && (
         <div className="alert alert-success" role="alert">
-          ✅ Vehicle listed successfully!
+          Vehicle listed successfully!
         </div>
       )}
 
@@ -88,7 +88,7 @@ const SellVehicle = () => {
           />
         </div>
 
-        {/* 🔹 Category */}
+        {/* Category */}
         <div className="mb-3">
           <label className="form-label">Category</label>
           <select
@@ -105,7 +105,7 @@ const SellVehicle = () => {
           </select>
         </div>
 
-        {/* 🔹 Price */}
+        {/*  Price */}
         <div className="mb-3">
           <label className="form-label">Price (₹)</label>
           <input
@@ -136,7 +136,7 @@ const SellVehicle = () => {
           </select>
         </div>
 
-        {/* 🔹 Image URL */}
+        {/* Image URL */}
         <div className="mb-3">
           <label className="form-label">Image URL</label>
           <input
@@ -151,7 +151,7 @@ const SellVehicle = () => {
         </div>
 
         <button type="submit" className="btn btn-primary w-100">
-          🚗 Submit Vehicle
+          Submit Vehicle
         </button>
       </form>
     </div>

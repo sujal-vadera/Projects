@@ -44,10 +44,10 @@ const ViewVehicle = () => {
     };
 
     if (existingThreadIndex !== -1) {
-      // ✅ Existing chat thread
+      // Existing chat thread
       allMessages[existingThreadIndex].chat.push(newMessage);
     } else {
-      // ✅ Create new thread
+      // Create new thread
       allMessages.push({
         vehicleId: vehicle.id,
         vehicleTitle: vehicle.title,
@@ -87,7 +87,7 @@ const ViewVehicle = () => {
           <p><strong>Seller Name:</strong> {vehicle.sellerName || 'Unknown'}</p>
           <p><strong>Contact:</strong> {vehicle.sellerContact || 'Hidden'}</p>
 
-          {/* 📩 Message Box */}
+          {/* Message Box */}
           <div className="mt-4">
             <h5>Send Message to Seller</h5>
             <textarea
@@ -98,7 +98,7 @@ const ViewVehicle = () => {
               onChange={(e) => setMessageText(e.target.value)}
             />
             <button className="btn btn-success" onClick={handleSendMessage}>
-              📩 Send
+               Send
             </button>
           </div>
         </div>

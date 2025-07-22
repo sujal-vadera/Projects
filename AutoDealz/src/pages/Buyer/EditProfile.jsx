@@ -10,10 +10,10 @@ const EditProfile = () => {
     name: '',
     email: '',
     password: '',
-    contact: '', // ✅ added contact
+    contact: '', //  added contact
   });
 
-  // 🔄 Load current user data
+  // Load current user data
   useEffect(() => {
     if (!currentUser) {
       alert('Please login first!');
@@ -25,11 +25,11 @@ const EditProfile = () => {
       name: currentUser.name || '',
       email: currentUser.email || '',
       password: currentUser.password || '',
-      contact: currentUser.contact || '', // ✅ added contact
+      contact: currentUser.contact || '', 
     });
   }, []);
 
-  // 🖊️ Handle input change
+ 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -38,7 +38,7 @@ const EditProfile = () => {
     }));
   };
 
-  // 💾 Update profile data
+  // Update profile data
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -50,7 +50,7 @@ const EditProfile = () => {
         : user
     );
 
-    // 🔐 Preserve role
+    // Preserve role
     const updatedCurrentUser = {
       ...currentUser,
       ...formData,
@@ -81,7 +81,7 @@ const EditProfile = () => {
           />
         </div>
 
-        {/* 📧 Email */}
+        {/* Email */}
         <div className="mb-3">
           <label className="form-label">Email (can't be changed)</label>
           <input
@@ -93,7 +93,7 @@ const EditProfile = () => {
           />
         </div>
 
-        {/* ☎️ Contact */}
+        {/* Contact */}
         <div className="mb-3">
           <label className="form-label">Contact</label>
           <input
@@ -106,7 +106,7 @@ const EditProfile = () => {
           />
         </div>
 
-        {/* 🔒 Password */}
+        {/* Password */}
         <div className="mb-4">
           <label className="form-label">Password</label>
           <input
@@ -120,7 +120,7 @@ const EditProfile = () => {
         </div>
 
         <button type="submit" className="btn btn-success w-100">
-          ✅ Update Profile
+           Update Profile
         </button>
       </form>
     </div>

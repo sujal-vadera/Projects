@@ -57,7 +57,7 @@ const BuyUsedVehicle = () => {
     },
   ];
 
-  // ✅ Check login and set user
+  // Check login and set user
   useEffect(() => {
     const current = getFromStorage('currentUser');
     if (!current) {
@@ -68,11 +68,11 @@ const BuyUsedVehicle = () => {
     }
   }, [navigate]);
 
-  // ✅ Load all vehicles and remove current user's vehicles
+  // Load all vehicles and remove current user's vehicles
   useEffect(() => {
     const allAds = getFromStorage('ads') || [];
 
-    // ✅ Exclude current user's own ads using email (unique)
+    // Exclude current user's own ads using email (unique)
     const othersVehicles = allAds.filter(
       (v) => v.sellerEmail !== user?.email
     );
@@ -97,7 +97,7 @@ const BuyUsedVehicle = () => {
       </h2>
       <h4 className="mb-4 fw-bold text-center">Search Used Vehicles</h4>
 
-      {/* 🔍 Filters */}
+      {/*  Filters */}
       <div className="row mb-4">
         <div className="col-md-6 mb-2">
           <select
@@ -125,7 +125,7 @@ const BuyUsedVehicle = () => {
         </div>
       </div>
 
-      {/* 🚗 Vehicle Cards */}
+      {/* Vehicle Cards */}
       <div className="row g-4">
         {filteredVehicles.length === 0 ? (
           <div className="text-center text-danger">
@@ -143,7 +143,7 @@ const BuyUsedVehicle = () => {
                 id={vehicle.id}
                 sellerName={vehicle.sellerName}
                 sellerContact={vehicle.sellerContact}
-                sellerEmail={vehicle.sellerEmail} // ✅ this was missing
+                sellerEmail={vehicle.sellerEmail} 
               />
 
             </div>

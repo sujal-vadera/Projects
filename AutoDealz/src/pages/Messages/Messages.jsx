@@ -12,10 +12,10 @@ useEffect(() => {
   const messages = getFromStorage('messages') || [];
   const ads = getFromStorage('ads') || [];
 
-  // ✅ Get valid vehicle IDs
+  // Get valid vehicle IDs
   const validVehicleIds = ads.map(ad => ad.id);
 
-  // ✅ Filter messages that belong to user AND vehicle still exists
+  //  Filter messages that belong to user AND vehicle still exists
   const userMessages = messages.filter(
     (thread) =>
       (thread.buyerEmail === currentUser.email ||
