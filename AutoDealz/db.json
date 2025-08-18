@@ -1,0 +1,65 @@
+{
+  "users": [
+    {
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "role": "admin",
+      "id": "4b99"
+    },
+    {
+      "id": "38cf",
+      "name": "S",
+      "email": "S@GMAIL.COM",
+      "contact": "1",
+      "password": "1",
+      "role": "user"
+    },
+    {
+      "id": "6404",
+      "name": "sujal",
+      "email": "sv@gmail.com",
+      "contact": "5565",
+      "password": "1",
+      "role": "user"
+    }
+  ],
+  "ads": [
+    {
+      "id": "1753424140993",
+      "title": "acess ",
+      "price": "5656656",
+      "city": "Surat",
+      "category": "Car",
+      "image": "https://i.pinimg.com/736x/af/a1/02/afa102f8f42fa0505c858e67324c56db.jpg",
+      "sellerName": "Admin",
+      "sellerEmail": "admin@gmail.com"
+    }
+  ],
+  "cities": [
+    {
+      "name": "Surat",
+      "id": "e796"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Car",
+      "id": "00ef"
+    }
+  ],
+  "messages": [],
+  "favourites": [
+    {
+      "id": 2,
+      "title": "Activa 6G",
+      "price": "75000",
+      "city": "Pune",
+      "image": "https://i.pinimg.com/736x/4c/9a/2a/4c9a2aebe54a25ca474163406aec81a1.jpg",
+      "category": "Scooter",
+      "sellerName": "Neha Sharma",
+      "sellerEmail": "neha@gmail.com",
+      "sellerContact": "9123456780"
+    }
+  ]
+}

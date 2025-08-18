@@ -13,11 +13,15 @@ import SellVehicle from './pages/Seller/SellVehicle';
 import MyVehicles from './pages/Seller/MyVehicles';
 
 // 🛠️ Admin Page (uncomment when implemented)
-// import AdminDashboard from './pages/Admin/AdminDashboard';
+import AdminDashboard from './pages/Admin/AdminDashboard';
+import ManageAds from './pages/Admin/ManageAds';
+import ManageCategories from './pages/Admin/ManageCategories';
+import ManageCities from './pages/Admin/ManageCities';
 
 // 🌐 Common Pages
 import Messages from './pages/Messages/Messages';
 import EditProfile from './pages/Buyer/EditProfile';
+import ManageUsers from './pages/Admin/ManageUsers';
 
 function App() {
   return (
@@ -43,9 +47,15 @@ function App() {
         <Route path="/Registration" element={<Registration />} />
 
         {/* 🛠️ Admin Route */}
-        {/* <Route path="/Admin/AdminDashboard" element={<AdminDashboard />} /> */}
+        <Route path="/Admin/AdminDashboard" element={<AdminDashboard />} />
+        <Route path="/Admin/ManageAds" element={<ManageAds />} />
+        <Route path="/Admin/ManageCategories" element={<ManageCategories />} />
+        <Route path="/Admin/ManageCities" element={<ManageCities />} />
+        <Route path="/Admin/ManageUsers" element={<ManageUsers />} />
+
       </Routes>
     </Router>
+    
   );
 }
 
