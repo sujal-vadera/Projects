@@ -213,7 +213,7 @@ function Login() {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handeclick = async (e) => {
     e.preventDefault();
 
     try {
@@ -253,7 +253,7 @@ function Login() {
     <div className="container mt-5" style={{ maxWidth: '400px' }}>
       <h3 className="text-center mb-4">User Login</h3>
 
-      <form onSubmit={handleSubmit}>
+      <form >
         <div className="mb-3">
           <label>Email</label>
           <input
@@ -281,7 +281,7 @@ function Login() {
           />
         </div>
 
-        <button type="submit" className="btn btn-primary w-100">Login</button>
+        <button onClick={handeclick} type="button" className="btn btn-primary w-100">Login</button>
       </form>
 
       <p className="text-center mt-3">

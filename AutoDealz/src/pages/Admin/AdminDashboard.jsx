@@ -139,7 +139,7 @@ function AdminDashboard() {
 
       <hr className="my-4" />
 
-      <h4 className="mb-3">🔧 Admin Tools</h4>
+      <h4 className="mb-3"> Admin Tools</h4>
       <ul style={{ lineHeight: '2rem' }}>
         <li><Link to="/Admin/ManageUsers">Manage Users</Link></li>
         <li><Link to="/Admin/ManageAds">Manage Ads</Link></li>

@@ -22,15 +22,17 @@ import ManageCities from './pages/Admin/ManageCities';
 import Messages from './pages/Messages/Messages';
 import EditProfile from './pages/Buyer/EditProfile';
 import ManageUsers from './pages/Admin/ManageUsers';
+import Home from './components/Home';
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      
 
       <Routes>
         {/* 🔰 Default Page */}
-        <Route path="/" element={<BuyUsedVehicle />} />
+
+        <Route path="/" element={<Home />} />
         <Route path="/BuyUsedVehicle" element={<BuyUsedVehicle />} />
 
         {/* 👤 User Pages */}
