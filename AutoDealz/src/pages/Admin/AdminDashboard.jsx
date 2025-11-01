@@ -75,6 +75,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import Navbar from '../../components/Navbar';
 
 function AdminDashboard() {
   const [usersCount, setUsersCount] = useState(0);
@@ -107,6 +108,7 @@ function AdminDashboard() {
 
   return (
     <div className="container py-4">
+      <Navbar/>
       <h2 className="text-center mb-4">📊 Admin Dashboard</h2>
 
       <div
