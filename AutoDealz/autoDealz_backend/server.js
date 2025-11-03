@@ -17,6 +17,7 @@ app.use(express.json());
 app.use("/api/auth", require("./backend/routes/authRoutes"));
 app.use("/api/auth", require("./backend/routes/admin/CategoryRoutes"))
 app.use("/api/auth", require("./backend/routes/admin/CityRoutes"))
+app.use("/api/auth", require("./backend/routes/vehicleRoutes"))
 
 
 // DB connect
